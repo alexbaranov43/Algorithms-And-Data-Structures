@@ -20,6 +20,7 @@ matrix = n => {
     for (let i = 0; i < n; i++) {
         results.push([])
     }
+    //initial values
     let counter = 1;
     let startColumn = 0;
     let endColumn = n - 1;
