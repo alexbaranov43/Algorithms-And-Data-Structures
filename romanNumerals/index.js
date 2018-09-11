@@ -30,11 +30,19 @@ solution = roman =>{
     }
     console.log(numbers)
     for (let j = 0; j < numbers.length; j++){
-     sum = sum + numbers[j];
+     if(numbers[j] < numbers[j + 1]){
+       sum += (numbers[j + 1] - numbers[j])
+       j = j + 2
+     }
+     else {
+       sum += numbers[j]
+     }
     }
     console.log(sum);
     // return sum;
   }
 
   solution('XV');
-  solution('MDCXVII')
+  solution('MDCXVII');
+  solution('XIX');
+  solution('MCM')
